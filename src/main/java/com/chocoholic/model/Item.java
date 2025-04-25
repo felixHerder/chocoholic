@@ -8,6 +8,6 @@ import java.util.List;
 @Data
 public class Item {
     private String title;
-    private BigDecimal basePrice;
+    private BigDecimal price;
     private List<Ingredient> ingredients;
 }
