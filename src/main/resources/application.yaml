@@ -1,3 +1,6 @@
 spring:
   mustache:
     suffix: .html
+  devtools:
+    restart:
+      exclude: static/**,templates/**,custom/**

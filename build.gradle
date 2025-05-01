@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '3.1.0'
 	id 'io.spring.dependency-management' version '1.1.0'
 	id 'java'
-	id("io.freefair.lombok") version "8.13.1"
 }
 
 group = 'com.chocoholic'
@@ -13,16 +12,21 @@ repositories {
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok'
+	testCompileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
-	implementation 'com.h2database:h2:2.3.232'
-
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
+	testImplementation 'net.sourceforge.htmlunit:htmlunit'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	testImplementation 'org.htmlunit:htmlunit:4.11.1'
+
+	testImplementation 'com.h2database:h2'
 }
 
 test {
