@@ -39,15 +39,15 @@ public class DesignItemController {
         }
     }
 
-    @ModelAttribute(name = "itemOrder")
-    public ItemOrder order() {
-        return new ItemOrder();
-    }
+//    @ModelAttribute(name = "itemOrder")
+//    public ItemOrder order() {
+//        return new ItemOrder();
+//    }
 
-    @ModelAttribute(name = "item")
-    public Item item() {
-        return new Item();
-    }
+//    @ModelAttribute(name = "item")
+//    public Item item() {
+//        return new Item();
+//    }
 
     @GetMapping
     public String showDesignForm(){
