@@ -1,4 +1,3 @@
-truncate table catalog;
 insert into catalog values ('ptdm', 'Pastel de Mata', 0.75);
 insert into catalog values ('chalf', 'Chocolate Alfajores', 0.95);
 insert into catalog values ('apstr', 'Apple Strudel', 1.60);
