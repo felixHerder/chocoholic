@@ -1,7 +1,6 @@
 package com.chocoholic.model;
 
 import lombok.Data;
-
 import java.math.BigDecimal;
 
 @Data

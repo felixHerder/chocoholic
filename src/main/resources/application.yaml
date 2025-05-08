@@ -1,6 +1,9 @@
 spring:
   mustache:
     suffix: .html
-  devtools:
-    restart:
-      exclude: static/**,templates/**,custom/**
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+    initialization-mode: always

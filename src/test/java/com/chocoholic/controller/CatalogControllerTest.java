@@ -1,4 +1,4 @@
-package com.chocoholic;
+package com.chocoholic.controller;
 
 import com.chocoholic.model.Item;
 import com.chocoholic.service.CatalogService;
